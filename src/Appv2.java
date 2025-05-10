@@ -7,16 +7,16 @@ public class Appv2 extends PApplet {
         size(600,600);
     }
     public void setup(){
-        radius = 2;
+        radius = 94.5;
         red = 180;
         green = 180;
         blue = 180;
-        rectx = 300;
+        rectx = 290;
     }
     public void draw(){
         background(0);
         fill(red,green,blue);
-        ellipse(300,300, (float)(radius*100), (float)(radius*100));
+        ellipse(300,300, (float)(radius*2), (float)(radius*2));
         rect(100, 505, 400, 5);
         rect(rectx,487, 10, 40);
         if (keyPressed){
@@ -24,13 +24,13 @@ public class Appv2 extends PApplet {
                 if (keyCode == LEFT){
                     rectx--;
                     if (rectx > 100){
-                        radius--;
+                        radius -= 0.5;
                     }
                 }
                 if (keyCode == RIGHT){
                     rectx++;
                     if (rectx < 490){
-                        radius++;
+                        radius += 0.5;
                     }
                 }
             }
