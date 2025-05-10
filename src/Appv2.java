@@ -1,6 +1,6 @@
 import processing.core.PApplet;
 
-public class App extends PApplet {
+public class Appv2 extends PApplet {
     int red,green, blue, rectx;
     double radius, mass, lifetime;
     public void settings(){
@@ -16,7 +16,7 @@ public class App extends PApplet {
     public void draw(){
         background(0);
         fill(red,green,blue);
-        ellipse(300,300, radius*100, radius*100);
+        ellipse(300,300, (float)(radius*100), (float)(radius*100));
         rect(100, 505, 400, 5);
         rect(rectx,487, 10, 40);
         if (keyPressed){
@@ -45,7 +45,7 @@ public class App extends PApplet {
         // Calculations
         mass = getMass(radius);
         lifetime = getLifetime(mass);
-        System.out.println("For Main-Sequence Stars (like our Sun) with the radius of "+radius+" R<target_symbol>\nAn Estimated mass of: "+mass+" M<target_symbol>\nEstimated Lifetime: "+lifetime+ "years")
+        System.out.println("For Main-Sequence Stars (like our Sun) with the radius of "+radius+" R<target_symbol>\nAn Estimated mass of: "+mass+" M<target_symbol>\nEstimated Lifetime: "+lifetime+ "years");
 
     }
 
@@ -58,6 +58,6 @@ public class App extends PApplet {
     }
 
     public static void main(String[] args){
-        PApplet.main("App");
+        PApplet.main("Appv2");
     }
 }
