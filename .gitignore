@@ -12,7 +12,7 @@ out/
 
 # Ignore external libraries (especially core.jar if not redistributable)
 lib/core.jar
-
+core.jar
 # Ignore OS-specific files
 .DS_Store
 Thumbs.db
