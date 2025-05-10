@@ -9,7 +9,7 @@ To run this project, download the Processing core library:
 
 👉 [Download Processing](https://processing.org/download/)
 
-Once installed, you can find `core.jar` inside the `lib` folder of the Processing application directory.
+Once installed, you must add `core.jar` as a library.
 
 ---
 
